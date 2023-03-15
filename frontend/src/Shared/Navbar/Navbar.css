@@ -1,0 +1,210 @@
+.navbar_section{
+    background-color: hsla(0,0%,100%,.85);
+    position: fixed;
+    right: 0;
+    left: 0;
+    z-index: 111;
+}
+
+.navbar_container  > span{
+    position: absolute;
+    right: 0;
+    display: none;
+}
+
+.navbar_container {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    line-height: 50px;
+    padding: 5px 0;
+    position: relative;
+}
+
+.navbar_logo_wrap{
+    width: 40%;
+}
+
+.navbar_items_wrap{
+    width: 60%;
+}
+
+.navbar_logo_wrap{
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+.navbar_logo_wrap > img {
+    width: 128px;
+    height: 37px;
+    cursor: pointer;
+}
+
+.navbar_items_wrap > nav{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.navbar_items_wrap > nav > ul {
+    display: flex;
+    align-items: center;
+}
+
+.navbar_items_wrap > nav > ul > li {
+    list-style: none;
+    margin: 0px 5px;
+}
+
+.navbar_items_wrap > nav > ul > li > a{
+    text-decoration: none;
+    padding: 10px 10px;
+    font-size: 15px;
+    color: rgba(0,0,0,.55);
+}
+
+.navbar_items_wrap > nav > ul > li > a:hover{
+    color: #333;
+}
+
+.navbar_items_wrap > nav > ul > li > span {
+    font-size: 12px;
+    color: #198754;
+    cursor: pointer;
+}
+
+.navbar_items_wrap > nav > ul > li > span:hover{
+    color: #333;
+}
+
+.navbar_login_register_btn_wrap{
+    margin-left: 0px;
+}
+
+.navbar_login_register_btn_wrap > button {
+    border: 1px solid #198754;
+    outline: 0;
+    margin-left: 10px;
+    padding: 10px 15px;
+    background-color: #198754;
+    color: #fff;
+    border-radius: 5px;
+    font-size: 13px;
+    cursor: pointer;
+}
+
+.toggle_logo{
+    display: none;
+}
+
+
+/* Media Query USE Start */
+@media only screen and (max-width: 425px){
+	.navbar_container {
+        width: 80%;
+        position: relative;
+    }
+
+    .toggle_logo{
+        display: block;
+    }
+
+    .navbar_container {
+        width: 80%;
+        margin: auto;
+        display: flex;
+        justify-content: flex-start;
+        line-height: 40px;
+        padding: 10px 0;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar_logo_wrap > img {
+        width: 108px;
+        height: 30px;
+        cursor: pointer;
+    }
+
+    .navbar_items_wrap > nav{
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+        flex-direction: column;
+    }
+    
+    .navbar_items_wrap > nav > ul {
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+
+    }
+
+    .toggle{
+        display: none;
+    }
+
+    .navbar_logo_wrap{
+        width: 0%;
+    }
+    
+    .navbar_items_wrap{
+        width: 0%;
+    }
+
+
+    .navbar_items_wrap > nav > ul {
+        margin-top: 10px;
+    }
+
+    .navbar_items_wrap > nav > ul > li {
+        list-style: none;
+        margin: 0px 0px;
+        width: 100px;
+        /* height: 30px; */
+    }
+
+    .navbar_items_wrap > nav > ul > li > a{
+        text-decoration: none;
+        padding: 0px 0px;
+        font-size: 15px;
+        color: rgba(0,0,0,.55);
+    }
+
+    .navbar_login_register_btn_wrap{
+        margin-left: 0px;
+        margin-top: 17px;
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .navbar_login_register_btn_wrap > button {
+        border: 1px solid #198754;
+        outline: 0;
+        margin-left: 0px;
+        padding: 10px 15px;
+        background-color: #198754;
+        color: #fff;
+        border-radius: 5px;
+        font-size: 13px;
+        cursor: pointer;
+        margin-top: 10px;
+        width: 300px;
+    }
+
+    .navbar_container  > span{
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 10px;
+        cursor: pointer;
+    }
+
+    .navbar_container  > span >i {
+        font-size: 20px;
+    }
+}

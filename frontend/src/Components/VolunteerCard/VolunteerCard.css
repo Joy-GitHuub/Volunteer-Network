@@ -1,0 +1,83 @@
+.full_card_wrap{
+    background-color: #fff;
+    padding: 15px;
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.127) 0px 3px 8px;
+    border-radius: 10px;
+}
+
+.full_card_wrap{
+    display: flex;
+}
+
+.myEvent_image_wrap{
+    height: 100%;
+}
+
+.myEvent_image_wrap > img{
+    width: 120px;
+    height: 100% !important;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.full_card_info_wrap{
+    display: flex;
+    align-items: flex-start;
+    width: 80%;
+}
+
+.myEvent_info_wrap {
+    margin-left: 20px;
+}
+
+.myEvent_info_wrap > h4{
+    font-size: 14px;
+    font-weight: 500;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.delete_event_wrap{
+    width: 20%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.delete_event_wrap > button{
+    width: 200px;
+    height: 30px;
+    border: 0;
+    outline: 0;
+    background-color: #eee;
+    font-weight: 500;
+    font-size: 12px;
+    cursor: pointer;
+    color: #333;
+}
+
+
+@media only screen and (max-width: 668px){
+    .volunteer_card_wrap{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .full_card_wrap{
+        background-color: #fff;
+        padding: 10px;
+        cursor: pointer;
+        box-shadow: rgba(0, 0, 0, 0.127) 0px 3px 8px;
+        border-radius: 10px;
+        width: 90%;
+    }
+    .myEvent_image_wrap > img{
+        width: 100px;
+        height: 100% !important;
+        object-fit: cover;
+        border-radius: 10px;
+    }
+}

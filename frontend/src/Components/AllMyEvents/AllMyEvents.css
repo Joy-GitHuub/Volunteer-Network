@@ -1,0 +1,23 @@
+.full_volunteer_section_container{
+    width: 70%;
+    margin: auto;
+    padding-top: 100px;
+}
+
+.volunteer_card_section_wrap{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+@media only screen and (max-width: 668px){
+
+    .full_volunteer_section_container{
+        width: 100%;
+    }
+
+    .volunteer_card_section_wrap{
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+}

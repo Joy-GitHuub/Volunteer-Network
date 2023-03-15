@@ -1,0 +1,24 @@
+.donation_page{
+    width: 100%;
+    height: 100vh;
+    background-color: #4aa96b92;
+    padding-top: 100px;
+}
+
+.donation_page_title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.donation_page_title > h1{
+    font-size: 50px;
+    color: #4aa96c;
+    font-weight: 500;
+}
+
+@media only screen and (max-width: 668px){
+    .donation_page_title > h1{
+        font-size: 20px;
+    }
+}

@@ -1,0 +1,8 @@
+.home_page_section{
+    background-image: linear-gradient(to right bottom,hsla(0,0%,100%,.95),hsla(0,0%,100%,.85)),url('https://volunteer-client-fd9b6.web.app/static/media/home-bg.b1facdf9.png');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: top;
+    min-height: 100vh;
+    width: 100%;
+}
